@@ -7,7 +7,8 @@ api = Api(app)
 class HelloWorld(Resource):
     def get(self):
         return { 'about': 'Hello' }
-
+    def post(self):
+        return "Ayyyy"
 api.add_resource(HelloWorld, '/')
 
 if __name__ == '__main__':
