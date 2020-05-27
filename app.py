@@ -12,7 +12,7 @@ class HelloWorld(Resource):
         if request.files:
             print('here i am')
             return request.files
-        return "Ayyyy"
+        # return "Ayyyy"
 api.add_resource(HelloWorld, '/')
 
 if __name__ == '__main__':
