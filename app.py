@@ -15,7 +15,8 @@ class FaceDetection(Resource):
     def post(self):
         if request.files:
             image = request.files["images"]
-            image.save(os.path.join(MYDIR + "/" + app.config["IMAGE_UPLOADS"], image.filename))
+            # image.save(os.path.join(MYDIR + "/" + app.config["IMAGE_UPLOADS"], image.filename))
+            image.save(MYDIR + "/" + app.config["IMAGE_UPLOADS"])
             return "Image Uploaded successfully"
         else:
             return "Error uploading File"
