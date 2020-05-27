@@ -12,7 +12,7 @@ class HelloWorld(Resource):
         print(request.files)
         if request.files:
             print('here i am')
-            image = request.files["image"]
+            image = request.files["images"]
             print(image)
             return image
         return "Ayyyy"
