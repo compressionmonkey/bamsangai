@@ -6,11 +6,11 @@ api = Api(app)
 
 class HelloWorld(Resource):
     def get(self):
+        return { 'about': 'Hello' }
+    def post(self):
         if request.files:
             print('here i am')
             return request.files
-        return { 'about': 'Hello' }
-    def post(self):
         return "Ayyyy"
 api.add_resource(HelloWorld, '/')
 
