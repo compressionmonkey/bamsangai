@@ -4,17 +4,16 @@ from flask_cors import CORS
 import os
 import cv2
 
-MYDIR = os.path.dirname(__file__)
-app.config["IMAGE_UPLOADS"] = "Uploads"
-
-face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-img = cv2.imread(MYDIR + "/" + app.config["IMAGE_UPLOADS"])
-gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-
 app = Flask(__name__)
 CORS(app)
 
 api = Api(app)
+
+MYDIR = os.path.dirname(__file__)
+app.config["IMAGE_UPLOADS"] = "Uploads"
+
+face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+
 
 class FaceDetection(Resource):
     def get(self):
@@ -24,6 +23,8 @@ class FaceDetection(Resource):
             image = request.files["images"]
             # image.save(os.path.join(MYDIR + "/" + app.config["IMAGE_UPLOADS"], image.filename))
             image.save(MYDIR + "/" + app.config["IMAGE_UPLOADS"])
+            img = cv2.imread(MYDIR + "/" + app.config["IMAGE_UPLOADS"] + image.filename)
+            gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
             faces = face_cascade.detectMultiScale(gray, 1.1, 4)
             if faces is not '':
                 print(True)
