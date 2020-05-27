@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-app.config["IMAGE_UPLOADS"] = "./Uploads"
+app.config["IMAGE_UPLOADS"] = "/Uploads"
 api = Api(app)
 
 class FaceDetection(Resource):
