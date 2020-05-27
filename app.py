@@ -5,6 +5,7 @@ import os
 app = Flask(__name__)
 CORS(app)
 
+MYDIR = os.path.dirname(__file__)
 app.config["IMAGE_UPLOADS"] = os.getcwd() + "/Uploads"
 api = Api(app)
 
@@ -14,7 +15,7 @@ class FaceDetection(Resource):
     def post(self):
         if request.files:
             image = request.files["images"]
-            image.save(os.path.join(app.config["IMAGE_UPLOADS"], image.filename))
+            image.save(os.path.join(MYDIR + "/" + app.config["IMAGE_UPLOADS"], image.filename))
             return "Image Uploaded successfully"
         else:
             return "Error uploading File"
