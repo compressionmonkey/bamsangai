@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app)
 
 MYDIR = os.path.dirname(__file__)
-app.config["IMAGE_UPLOADS"] = os.getcwd() + "/Uploads"
+app.config["IMAGE_UPLOADS"] = "Uploads"
 api = Api(app)
 
 class FaceDetection(Resource):
