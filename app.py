@@ -6,6 +6,8 @@ api = Api(app)
 
 class HelloWorld(Resource):
     def get(self):
+        if request.files:
+            return request.files
         return { 'about': 'Hello' }
     def post(self):
         return "Ayyyy"
