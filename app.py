@@ -9,10 +9,13 @@ class HelloWorld(Resource):
     def get(self):
         return { 'about': 'Hello' }
     def post(self):
+        print(request.files)
         if request.files:
             print('here i am')
-            return request.files
-        # return "Ayyyy"
+            image = request.files["image"]
+            print(image)
+            return image
+        return "Ayyyy"
 api.add_resource(HelloWorld, '/')
 
 if __name__ == '__main__':
