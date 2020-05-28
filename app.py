@@ -10,7 +10,7 @@ CORS(app)
 api = Api(app)
 
 MYDIR = os.path.dirname(__file__)
-app.config["IMAGE_UPLOADS"] = "Uploads"
+app.config["IMAGE_UPLOADS"] = "Uploads/"
 
 # face_cascade = CascadeClassifier('haarcascade_frontalface_default.xml')
 
