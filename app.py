@@ -25,7 +25,7 @@ class FaceDetection(Resource):
             image = request.files["images"]
             print("opopopop",image)
             # image.save(os.path.join(MYDIR + "/" + app.config["IMAGE_UPLOADS"], image.filename))
-            image.save(MYDIR + "/" + app.config["IMAGE_UPLOADS"])
+            image.save(MYDIR + "/" + app.config["IMAGE_UPLOADS"],image.filename)
             entries = Path(MYDIR + "/" + app.config["IMAGE_UPLOADS"] + "/")
             for entry in entries.iterdir():
                 print(entry.name)
