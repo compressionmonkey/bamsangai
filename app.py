@@ -23,16 +23,19 @@ class FaceDetection(Resource):
             image = request.files["images"]
             # image.save(os.path.join(MYDIR + "/" + app.config["IMAGE_UPLOADS"], image.filename))
             image.save(MYDIR + "/" + app.config["IMAGE_UPLOADS"])
-            img = imread(MYDIR + "/" + app.config["IMAGE_UPLOADS"] + image.filename)
-            gray = cvtColor(img, COLOR_BGR2GRAY)
-            faces = face_cascade.detectMultiScale(gray, 1.1, 4)
-            if faces is not '':
-                print(True)
-
-            for (x, y, w, h) in faces:
-                rectangle(img, (x, y), (x + w, y + h), (255, 0, 0), 3)
-
-            waitKey()
+            with os.scandir(MYDIR + "/" + app.config["IMAGE_UPLOADS"]) as entries:
+                for entry in entries:
+                    print("here is ",entry.name)
+            # img = imread(MYDIR + "/" + app.config["IMAGE_UPLOADS"] + image.filename)
+            # gray = cvtColor(img, COLOR_BGR2GRAY)
+            # faces = face_cascade.detectMultiScale(gray, 1.1, 4)
+            # if faces is not '':
+            #     print(True)
+            #
+            # for (x, y, w, h) in faces:
+            #     rectangle(img, (x, y), (x + w, y + h), (255, 0, 0), 3)
+            #
+            # waitKey()
             return "Image Uploaded successfully"
         else:
             return "Error uploading File"
