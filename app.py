@@ -23,6 +23,7 @@ class FaceDetection(Resource):
     def post(self):
         if request.files:
             image = request.files["images"]
+            print("opopopop",image)
             # image.save(os.path.join(MYDIR + "/" + app.config["IMAGE_UPLOADS"], image.filename))
             image.save(MYDIR + "/" + app.config["IMAGE_UPLOADS"])
             entries = Path(MYDIR + "/" + app.config["IMAGE_UPLOADS"] + "/")
