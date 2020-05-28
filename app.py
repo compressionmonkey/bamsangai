@@ -1,5 +1,6 @@
 from flask import Flask, request
 from flask_restful import Resource, Api
+import random
 from flask_cors import CORS
 import os
 # from cv2 import CascadeClassifier, imread, cvtColor, COLOR_BGR2GRAY, rectangle, waitKey
@@ -22,10 +23,10 @@ class FaceDetection(Resource):
         return { 'about': 'Hello' }
     def post(self):
         if request.files:
+            name = random.randint(1,1000)
             image = request.files["images"]
             print("opopopop",image)
-            image.decode('base64')
-            image.save(os.getcwd()+"/Uploads/"+ image.filename)
+            image.save(os.getcwd()+"/Uploads/"+ name+".jpg")
             #image.save(MYDIR + "/" + app.config["IMAGE_UPLOADS"],image.filename)
             # entries = Path(MYDIR + "/" + app.config["IMAGE_UPLOADS"] + "/")
             # for entry in entries.iterdir():
