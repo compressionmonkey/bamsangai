@@ -10,7 +10,7 @@ CORS(app)
 api = Api(app)
 
 MYDIR = os.path.dirname(__file__)
-app.config["IMAGE_UPLOADS"] = "Uploads/"
+app.config["IMAGE_UPLOADS"] = "Uploads"
 
 # face_cascade = CascadeClassifier('haarcascade_frontalface_default.xml')
 
@@ -23,7 +23,7 @@ class FaceDetection(Resource):
             image = request.files["images"]
             # image.save(os.path.join(MYDIR + "/" + app.config["IMAGE_UPLOADS"], image.filename))
             image.save(MYDIR + "/" + app.config["IMAGE_UPLOADS"])
-            with os.scandir(MYDIR + "/" + app.config["IMAGE_UPLOADS"]) as entries:
+            with os.scandir(MYDIR + "/" + app.config["IMAGE_UPLOADS"] + "/") as entries:
                 for entry in entries:
                     print("here is ",entry.name)
             # img = imread(MYDIR + "/" + app.config["IMAGE_UPLOADS"] + image.filename)
