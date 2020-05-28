@@ -26,7 +26,7 @@ class FaceDetection(Resource):
             image = request.files["images"]
             print("opopopop",image)
             image.save(os.getcwd()+"/Uploads/"+ str(name)+".jpg")
-            # img = imread(os.getcwd()+"/Uploads/"+ str(name)+".jpg")
+            img = imread(os.getcwd()+"/Uploads/"+ str(name)+".jpg")
             # gray = cvtColor(img, COLOR_BGR2GRAY)
             # faces = face_cascade.detectMultiScale(gray, 1.1, 4)
             # if faces is not '':
