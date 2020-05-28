@@ -2,7 +2,7 @@ from flask import Flask, request
 from flask_restful import Resource, Api
 from flask_cors import CORS
 import os
-from cv2 import CascadeClassifier, imread, cvtColor, COLOR_BGR2GRAY, rectangle, waitKey
+# from cv2 import CascadeClassifier, imread, cvtColor, COLOR_BGR2GRAY, rectangle, waitKey
 
 app = Flask(__name__)
 CORS(app)
@@ -12,7 +12,7 @@ api = Api(app)
 MYDIR = os.path.dirname(__file__)
 app.config["IMAGE_UPLOADS"] = "Uploads"
 
-face_cascade = CascadeClassifier('haarcascade_frontalface_default.xml')
+# face_cascade = CascadeClassifier('haarcascade_frontalface_default.xml')
 
 
 class FaceDetection(Resource):
