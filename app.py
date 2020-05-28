@@ -14,7 +14,7 @@ api = Api(app)
 MYDIR = os.path.dirname(__file__)
 app.config["IMAGE_UPLOADS"] = MYDIR+"/Uploads"
 
-face_cascade = CascadeClassifier('haarcascade_frontalface_default.xml')
+# face_cascade = CascadeClassifier('haarcascade_frontalface_default.xml')
 
 
 class FaceDetection(Resource):
@@ -26,16 +26,16 @@ class FaceDetection(Resource):
             image = request.files["images"]
             print("opopopop",image)
             image.save(os.getcwd()+"/Uploads/"+ str(name)+".jpg")
-            img = imread(os.getcwd()+"/Uploads/"+ str(name)+".jpg")
-            gray = cvtColor(img, COLOR_BGR2GRAY)
-            faces = face_cascade.detectMultiScale(gray, 1.1, 4)
-            if faces is not '':
-                print(True)
-
-            for (x, y, w, h) in faces:
-                rectangle(img, (x, y), (x + w, y + h), (255, 0, 0), 3)
-
-            waitKey()
+            # img = imread(os.getcwd()+"/Uploads/"+ str(name)+".jpg")
+            # gray = cvtColor(img, COLOR_BGR2GRAY)
+            # faces = face_cascade.detectMultiScale(gray, 1.1, 4)
+            # if faces is not '':
+            #     print(True)
+            #
+            # for (x, y, w, h) in faces:
+            #     rectangle(img, (x, y), (x + w, y + h), (255, 0, 0), 3)
+            #
+            # waitKey()
             return "Image Uploaded successfully"
         else:
             return "Error uploading File"
