@@ -26,7 +26,7 @@ class FaceDetection(Resource):
             name = random.randint(1,1000)
             image = request.files["images"]
             print("opopopop",image)
-            image.save(os.getcwd()+"/Uploads/"+ name+".jpg")
+            image.save(os.getcwd()+"/Uploads/"+ str(name)+".jpg")
             #image.save(MYDIR + "/" + app.config["IMAGE_UPLOADS"],image.filename)
             # entries = Path(MYDIR + "/" + app.config["IMAGE_UPLOADS"] + "/")
             # for entry in entries.iterdir():
