@@ -30,7 +30,7 @@ class FaceDetection(Resource):
             gray = cvtColor(img, COLOR_BGR2GRAY)
             faces = face_cascade.detectMultiScale(gray, 1.1, 4)
             print("what is faces ",faces.size)
-            if faces.size != 0 or all(faces):
+            if all(faces):
                 return "You are a human Being. Enjoy your login"
 
             for (x, y, w, h) in faces:
