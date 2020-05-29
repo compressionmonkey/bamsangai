@@ -24,13 +24,14 @@ class FaceDetection(Resource):
         if request.files:
             name = random.randint(1,1000)
             image = request.files["images"]
-            print("opopopop",image)
             image.save(os.getcwd()+"/Uploads/"+ str(name)+".jpg")
             img = imread(os.getcwd()+"/Uploads/"+ str(name)+".jpg")
             gray = cvtColor(img, COLOR_BGR2GRAY)
             faces = face_cascade.detectMultiScale(gray, 1.1, 4)
-            # print("what is faces ",faces.size)
-            if all(faces):
+            print("faces <<<<< ", all(faces))
+            # print("what is faces ",faces.size) faces.size != 0 or
+            # gotta figure out how to check if numpy and tuple are empty
+            if not all(faces):
                 return "You are a human Being. Enjoy your login"
 
             for (x, y, w, h) in faces:
