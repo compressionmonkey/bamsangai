@@ -28,10 +28,10 @@ class FaceDetection(Resource):
             img = imread(os.getcwd()+"/Uploads/"+ str(name)+".jpg")
             gray = cvtColor(img, COLOR_BGR2GRAY)
             faces = face_cascade.detectMultiScale(gray, 1.1, 4)
-            print("faces <<<<< ", all(faces.all()))
+            # print("faces <<<<< ", all(faces))
             # print("what is faces ",faces.size) faces.size != 0 or
             # gotta figure out how to check if numpy and tuple are empty
-            if not all(faces):
+            if faces is not '':
                 return "You are a human Being. Enjoy your login"
 
             for (x, y, w, h) in faces:
