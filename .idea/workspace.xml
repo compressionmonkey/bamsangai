@@ -11,7 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8063fbb7-b2ac-4f73-a4e5-fe991a5122ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasets_1869_18570_bitcoin_cash_price.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/random" beforeDir="false" afterPath="$PROJECT_DIR$/pricepredictor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +42,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kelden.dorji\Desktop\git\bamsangai" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.pricepredictor">
     <configuration name="flask" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="bamsangai" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -61,8 +69,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pricepredictor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="bamsangai" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pricepredictor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pricepredictor" />
         <item itemvalue="Python.flask" />
       </list>
     </recent_temporary>
@@ -105,22 +135,26 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="453" y="189" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1590690648091" />
-    <state width="1567" height="191" key="GridCell.Tab.0.bottom" timestamp="1590405403893">
+    <state x="474" y="136" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1591866437024">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1567" height="191" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1590405403893" />
-    <state width="1567" height="191" key="GridCell.Tab.0.center" timestamp="1590405403893">
+    <state x="474" y="136" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1600.860@0.0.1600.860" timestamp="1591866437024" />
+    <state width="1567" height="260" key="GridCell.Tab.0.bottom" timestamp="1591866537569">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1567" height="191" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1590405403893" />
-    <state width="1567" height="191" key="GridCell.Tab.0.left" timestamp="1590405403893">
+    <state width="1567" height="260" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1591866537569" />
+    <state width="1567" height="260" key="GridCell.Tab.0.center" timestamp="1591866537569">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1567" height="191" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1590405403893" />
-    <state width="1567" height="191" key="GridCell.Tab.0.right" timestamp="1590405403893">
+    <state width="1567" height="260" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1591866537569" />
+    <state width="1567" height="260" key="GridCell.Tab.0.left" timestamp="1591866537569">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1567" height="191" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1590405403893" />
+    <state width="1567" height="260" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1591866537569" />
+    <state width="1567" height="260" key="GridCell.Tab.0.right" timestamp="1591866537569">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1567" height="260" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1591866537569" />
     <state x="293" y="-2" width="1009" height="1470" key="search.everywhere.popup" timestamp="1590402957753">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
