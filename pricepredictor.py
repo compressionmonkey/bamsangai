@@ -20,7 +20,7 @@ date_format = pd.get_dummies(date)
 # df_bitcoin = pd.concat([price, date_format], axis="columns")
 
 # df_bitcoin.to_csv('test.csv')
-X_train, X_test, y_train, y_test = train_test_split(date_format,price,test_size=0.2, random_state=10)
+X_train, X_test, y_train, y_test = train_test_split(date_format.values,price,test_size=0.2, random_state=10)
 # print(X_train,y_train)
 
 prediction = LinearRegression()
@@ -74,7 +74,7 @@ find_best_model_using_gridsearchcv(date_format,price)
 def predict_price(dates,price):
     date_index = np.where(date_format.columns == dates)[0][0]
 
-    x = np.zeros(len(date_index.columns))
+    x = np.zeros(len(date_format.columns))
     if date_index >= 0:
         x[date_index] = 1
 
