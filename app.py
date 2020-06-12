@@ -4,7 +4,7 @@ import random
 from flask_cors import CORS
 import os
 from cv2 import CascadeClassifier, imread, cvtColor, COLOR_BGR2GRAY, rectangle, waitKey
-
+from pricepredictor import predict_price
 
 app = Flask(__name__)
 CORS(app)
@@ -40,7 +40,11 @@ class FaceDetection(Resource):
             waitKey()
         else:
             return "You are not a human being"
-api.add_resource(FaceDetection, '/')
 
+class PricePrediction(Resource):
+    def get(self):
+        return predict_price('Feb 20, 2019', 1000)
+api.add_resource(FaceDetection, '/')
+api.add_resource(PricePrediction, '/priceprediction')
 if __name__ == '__main__':
     app.run(debug=True)
