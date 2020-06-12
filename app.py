@@ -43,7 +43,7 @@ class FaceDetection(Resource):
 
 class PricePrediction(Resource):
     def get(self):
-        return predict_price('Feb 20, 2019', 1000)
+        return predict_price('Feb 20, 2018', 1000)
 api.add_resource(FaceDetection, '/')
 api.add_resource(PricePrediction, '/priceprediction')
 if __name__ == '__main__':
