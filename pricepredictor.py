@@ -78,7 +78,7 @@ def predict_price(dates,price):
     if date_index >= 0:
         x[date_index] = 1
 
-    print(prediction.predict([x])[0])
+    return prediction.predict([x])[0]
 
 # predict_price('Feb 20, 2019', 1000)
 # print(cross_val_score(LinearRegression(), date_format, price, cv=crossvalid))
