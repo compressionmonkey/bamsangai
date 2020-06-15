@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from sklearn.tree import DecisionTreeRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import ShuffleSplit
@@ -9,14 +10,27 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.linear_model import Lasso
 from sklearn.tree import DecisionTreeRegressor
 from matplotlib import pyplot as plt
-import matplotlib
 
-matplotlib.rcParams['figure.figsize'] = (20,10)
+import math
+from sklearn.preprocessing import MinMaxScaler
+# from keras.models import Sequential
+# from keras.layers import Dense,LSTM
+
+plt.style.use('bmh')
 
 df = pd.read_csv("datasets_1869_18570_bitcoin_cash_price.csv")
 price = df.Close
 date = df.Date
 date_format = pd.get_dummies(date)
+
+df['Prediction'] = df[['Close']].shift(periods=5, axis=1)
+
+plt.figure(figsize=(16,8))
+plt.title("Price history of Bitcoin")
+plt.xlabel('Days')
+plt.ylabel('Closing Price USD ($)')
+plt.plot(price)
+plt.show()
 # df_bitcoin = pd.concat([price, date_format], axis="columns")
 
 # df_bitcoin.to_csv('test.csv')
