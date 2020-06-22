@@ -11,7 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8063fbb7-b2ac-4f73-a4e5-fe991a5122ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uploads/dummy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +46,28 @@
       <recent name="C:\Users\kelden.dorji\Desktop\git\bamsangai" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.pricepredictor">
+  <component name="RunManager" selected="Python.dummy">
+    <configuration name="dummy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="bamsangai" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dummy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="flask" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="bamsangai" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,6 +112,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.dummy" />
         <item itemvalue="Python.pricepredictor" />
         <item itemvalue="Python.flask" />
       </list>
@@ -136,22 +160,42 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="474" y="136" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1600.860@0.0.1600.860" timestamp="1591866437024" />
-    <state width="1567" height="245" key="GridCell.Tab.0.bottom" timestamp="1592227297085">
+    <state width="1567" height="240" key="GridCell.Tab.0.bottom" timestamp="1592646677515">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1567" height="245" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1592227297085" />
-    <state width="1567" height="245" key="GridCell.Tab.0.center" timestamp="1592227297085">
+    <state width="1567" height="240" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1592646677515" />
+    <state width="1567" height="240" key="GridCell.Tab.0.center" timestamp="1592646677515">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1567" height="245" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1592227297085" />
-    <state width="1567" height="245" key="GridCell.Tab.0.left" timestamp="1592227297085">
+    <state width="1567" height="240" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1592646677515" />
+    <state width="1567" height="240" key="GridCell.Tab.0.left" timestamp="1592646677515">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1567" height="245" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1592227297085" />
-    <state width="1567" height="245" key="GridCell.Tab.0.right" timestamp="1592227297085">
+    <state width="1567" height="240" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1592646677515" />
+    <state width="1567" height="240" key="GridCell.Tab.0.right" timestamp="1592646677515">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1567" height="245" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1592227297085" />
+    <state width="1567" height="240" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1592646677515" />
+    <state width="1567" height="240" key="GridCell.Tab.1.bottom" timestamp="1592646677515">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1567" height="240" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1592646677515" />
+    <state width="1567" height="240" key="GridCell.Tab.1.center" timestamp="1592646677515">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1567" height="240" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1592646677515" />
+    <state width="1567" height="240" key="GridCell.Tab.1.left" timestamp="1592646677515">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1567" height="240" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1592646677515" />
+    <state width="1567" height="240" key="GridCell.Tab.1.right" timestamp="1592646677515">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1567" height="240" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1592646677515" />
+    <state x="500" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1592645201708">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="500" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1600.860@0.0.1600.860" timestamp="1592645201708" />
     <state x="293" y="-2" width="1009" height="1470" key="search.everywhere.popup" timestamp="1590402957753">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
