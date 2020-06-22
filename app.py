@@ -25,6 +25,7 @@ class FaceDetection(Resource):
             name = random.randint(1,1000)
             image = request.files["images"]
             image.save(os.getcwd()+"/Uploads/"+ str(name)+".jpg")
+            print(image)
             img = imread(os.getcwd()+"/Uploads/"+ str(name)+".jpg")
             print(img)
             gray = cvtColor(img, COLOR_BGR2GRAY)
