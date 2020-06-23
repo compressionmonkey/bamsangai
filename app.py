@@ -19,7 +19,7 @@ face_cascade = CascadeClassifier('haarcascade_frontalface_default.xml')
 
 class FaceDetection(Resource):
     def get(self):
-        return { 'about': 'Hello' }
+        return "hello world"
     def post(self):
         if request.files:
             name = random.randint(1,1000)
