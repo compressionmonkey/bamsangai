@@ -59,7 +59,7 @@ six==1.14.0
 soupsieve==2.0
 termcolor==1.1.0
 typed-ast==1.4.1
-urllib3==1.25.9
+urllib3==1.26.5
 virtualenv==20.0.21
 Werkzeug==1.0.1
 wrapt==1.11.2
